@@ -1,0 +1,19 @@
+.content{
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20%;
+    height: 50px;
+    width: 150px;
+}
+
+.cash{
+    z-index: 999;
+    position: relative;
+    top: 250px;
+    margin-left: 600px;
+    font-size: 25px;
+}
+
+button{
+    background-color: #757474;
+}

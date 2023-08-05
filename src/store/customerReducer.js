@@ -15,7 +15,7 @@ export const customerReducer = (state = defaultState, action) => {
         return { ...state, customers: [...state.customers, action.payload] }
   
       case GET_CUSTOMERS:
-        return { ...state, cash: state.cash - action.payload }
+        return { ...state, customers: [...state.customers, ...action.payload ]}
   
       case DELETE_CUSTOMER:
         return { ...state, customers: state.customers.filter(customer => customer.id !== action.payload)}

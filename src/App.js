@@ -6,7 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 export default function App() {
 
   const dispatch = useDispatch()
-  const cash = useSelector(state => state.cash)
+  const cash = useSelector(state => state.cash.cash)
   console.log(cash);
   const addCash = (cash) =>{
     dispatch({type:"ADD_CASH", payload:cash})    

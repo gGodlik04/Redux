@@ -1,7 +1,7 @@
 
 
 const defaultState = {
-  cash: 10,
+  cash: 10
 }
 
 const ADD_CASH = "ADD_CASH";

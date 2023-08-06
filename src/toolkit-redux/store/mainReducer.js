@@ -33,10 +33,4 @@ export default createReducer(initialState, builder => {
 })
 
 
-        // case ADD_NOTE:
-        //     return {...state, notes: [...state.notes, action.payload]}
-        // case REMOVE_NOTE:
-        //     return {...state, ...state.notes.pop()}
-
-
 

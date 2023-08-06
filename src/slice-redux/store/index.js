@@ -1,4 +1,4 @@
-import { applyMiddleware, combineReducers, createStore} from "redux";
+import { applyMiddleware, combineReducers} from "redux";
 import {composeWithDevTools} from 'redux-devtools-extension'
 import thunk from "redux-thunk";
 import { configureStore } from "@reduxjs/toolkit";
@@ -6,12 +6,13 @@ import mainReducer from "./mainReducer";
 
 
 
+
 const rootReducer = combineReducers({
-    main: mainReducer
+    main:  mainReducer
 })
 
 
-export const storeToolkitRedux = configureStore({
+export const storeSliceRedux = configureStore({
     reducer: rootReducer,
     middleware: [thunk]
 })

@@ -5,6 +5,7 @@
 import { NavLink, Route, Routes } from "react-router-dom";
 import { VanillaRedux } from "./vanila-redux/VanillaRedux";
 import { ToolkitRedux } from "./toolkit-redux/ToolkitRedux";
+import { SliceRedux } from "./slice-redux/SliceRedux";
 
 
 
@@ -20,12 +21,12 @@ export default function App() {
       <div className="header">
         <NavLink to="/vanilla-redux">Vanilla redux</NavLink>
         <NavLink to="/toolkit-redux">Toolkit redux</NavLink>
-        {/* <NavLink to="/Slice-redux">Slice redux</NavLink> */}
+        <NavLink to="/Slice-redux">Slice redux</NavLink>
       </div>
       <Routes>
         <Route path="/vanilla-redux" element={<VanillaRedux />}></Route>
         <Route path="/toolkit-redux" element={<ToolkitRedux />}></Route>
-        {/* <Route path="/Slice-redux" element={<SliceRedux/>}></Route> */}
+        <Route path="/Slice-redux" element={<SliceRedux/>}></Route>
       </Routes>
     </div>
   )

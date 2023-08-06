@@ -8,6 +8,7 @@ import './index.css';
 import { BrowserRouter } from 'react-router-dom';
 import { storeToolkitRedux } from './toolkit-redux/store';
 import { storeVanillaRedux } from './vanila-redux/store';
+import { storeSliceRedux } from './slice-redux/store';
 
 
 
@@ -17,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   // <React.StrictMode>
   <BrowserRouter>
-    <Provider store={storeToolkitRedux}> {/* add store from import */}
+    <Provider store={storeSliceRedux}> {/* add store from import */}
       <App />
     </Provider>
   </BrowserRouter>

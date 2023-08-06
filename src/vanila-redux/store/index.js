@@ -10,6 +10,6 @@ const rootReducer = combineReducers({
     customer: customerReducer
 })
 
-export const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
+export const storeVanillaRedux = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)))
 
 
